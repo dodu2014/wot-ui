@@ -111,7 +111,7 @@ const cellConfigs = computed(() => {
 
   for (let rowIndex = range.start; rowIndex <= range.end; rowIndex++) {
     const span = getSpanResult(rowIndex)
-    const hidden = span.rowspan === 0 || span.colspan === 0
+    const isHidden: boolean = span.rowspan === 0 || span.colspan === 0
 
     const cls = [
       'wd-table__cell',
@@ -120,14 +120,14 @@ const cellConfigs = computed(() => {
         'is-border': borderVal,
         'is-fixed': isFixed,
         'is-shadow': isLast && hasScrollLeft,
-        'is-hidden': hidden,
+        'is-hidden': isHidden,
         'is-last': isLastCol
       },
       `is-${align}`
     ]
 
     const style: CSSProperties = {}
-    if (hidden) {
+    if (isHidden) {
       style['display'] = 'none'
     } else {
       if (span.colspan > 1) {
@@ -151,7 +151,7 @@ const cellConfigs = computed(() => {
       value: data[rowIndex]?.[propKey],
       class: cls,
       style: objToStyle(style),
-      visible: !hidden
+      visible: !isHidden
     })
   }
   return configs
