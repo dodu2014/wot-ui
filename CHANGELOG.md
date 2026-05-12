@@ -1,6 +1,26 @@
 # 更新日志 
 
 
+### [2.0.6](https://github.com/wot-ui/wot-ui/compare/v2.0.5...v2.0.6) (2026-05-12)
+
+
+### ✏️ Documentation | 文档
+
+* ✏️  更新 Sass 版本要求，添加运行时警告处理说明 ([#35](https://github.com/wot-ui/wot-ui/issues/35)) ([268cd0e](https://github.com/wot-ui/wot-ui/commit/268cd0e744707ce29209ef38c4f260114dd92a33))
+* ✏️  更新深色模式和主题变量引入说明，增加代码示例 ([20aeb4d](https://github.com/wot-ui/wot-ui/commit/20aeb4d71f6993f37f38893b8e26294e5cb58180))
+* ✏️  新增 v1 迁移到 v2 的文档 ([4cafe19](https://github.com/wot-ui/wot-ui/commit/4cafe19ee3be75f9b08062ee74c6d5feffe7fa51))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 🐛 更新 Dialog 组件关闭逻辑，支持通过点击关闭按钮触发关闭操作并返回相应的 action ([#26](https://github.com/wot-ui/wot-ui/issues/26)) ([0aabf55](https://github.com/wot-ui/wot-ui/commit/0aabf55aa9c8c4e42cf761ea023e0d0117dc1a93))
+* 🐛 简化 cellConfigs 计算逻辑，移除不必要的可见性判断，修复微信小程序编译异常的问题 ([5a64e53](https://github.com/wot-ui/wot-ui/commit/5a64e531e0d40857cd8bb2c637414840d2e8f525)), closes [#34](https://github.com/wot-ui/wot-ui/issues/34)
+* 🐛 将 wd-tag 组件默认插槽内容的承载元素从 text 更改为 view ([#39](https://github.com/wot-ui/wot-ui/issues/39)) ([b72a2be](https://github.com/wot-ui/wot-ui/commit/b72a2bef01c60c8ba8ba14a6b838b660e9f52205)), closes [#25](https://github.com/wot-ui/wot-ui/issues/25)
+* 🐛 修复 ConfigProvider 中 Input 组件变量丢失的问题 ([#37](https://github.com/wot-ui/wot-ui/issues/37)) ([66ddace](https://github.com/wot-ui/wot-ui/commit/66ddace1f5bfd69cd23a8cead460263e2d63ee94)), closes [#36](https://github.com/wot-ui/wot-ui/issues/36)
+* 🐛 修复 Dialog 覆盖 Popup 样式权重较低导致被其他 Popup 覆盖的问题 ([#22](https://github.com/wot-ui/wot-ui/issues/22)) ([9f0fc52](https://github.com/wot-ui/wot-ui/commit/9f0fc52d8d0f9adf3812b08d8a34c45fd3ba6965)), closes [#21](https://github.com/wot-ui/wot-ui/issues/21)
+* 🐛 修复 FormItem label 属性不生效 ([#38](https://github.com/wot-ui/wot-ui/issues/38)) ([fdbcf93](https://github.com/wot-ui/wot-ui/commit/fdbcf935357b9ccbe4e6390551f2eca0f82c1cad)), closes [#30](https://github.com/wot-ui/wot-ui/issues/30)
+* 🐛 修复日期时间选择器在 ios26 微信小程序端区域选择切换时高度坍缩的问题 ([#41](https://github.com/wot-ui/wot-ui/issues/41)) ([e6de48d](https://github.com/wot-ui/wot-ui/commit/e6de48d76c68db7f4faddda0477e2fe0a060c9f5))
+
 ### [2.0.5](https://github.com/wot-ui/wot-ui/compare/v2.0.4...v2.0.5) (2026-04-27)
 
 
