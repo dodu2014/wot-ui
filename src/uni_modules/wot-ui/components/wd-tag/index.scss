@@ -181,6 +181,13 @@ $tag-types: (
 );
 
 $tag-sizes: (
+  "default": (
+    "font-size": $tag-default-font-size,
+    "line-height": $tag-default-line-height,
+    "padding": $tag-default-padding,
+    "round-padding": $tag-default-round-padding,
+    "icon-size": $tag-default-icon-size
+  ),
   "small": (
     "font-size": $tag-small-font-size,
     "line-height": $tag-small-line-height,
@@ -194,13 +201,6 @@ $tag-sizes: (
     "padding": $tag-medium-padding,
     "round-padding": $tag-medium-round-padding,
     "icon-size": $tag-medium-icon-size
-  ),
-  "default": (
-    "font-size": $tag-default-font-size,
-    "line-height": $tag-default-line-height,
-    "padding": $tag-default-padding,
-    "round-padding": $tag-default-round-padding,
-    "icon-size": $tag-default-icon-size
   ),
   "large": (
     "font-size": $tag-large-font-size,
