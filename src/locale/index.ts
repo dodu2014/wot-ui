@@ -1,5 +1,6 @@
 import { createI18n } from 'vue-i18n'
 import zhCN from './zh-CN.json'
+import zhTW from './zh-TW.json'
 import enUS from './en-US.json'
 import Locale from '../uni_modules/wot-ui/locale'
 import WotEnUS from '../uni_modules/wot-ui/locale/lang/en-US'
@@ -9,6 +10,9 @@ Locale.add({ 'en-US': WotEnUS })
 const messages = {
   'zh-CN': {
     ...zhCN
+  },
+  'zh-TW': {
+    ...zhTW
   },
   'en-US': {
     ...enUS

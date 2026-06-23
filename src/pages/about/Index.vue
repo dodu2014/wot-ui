@@ -24,7 +24,7 @@
             <wd-cell
               :title="$t('yuYanQieHuan')"
               title-width="var(--wot-n-200)"
-              :label="$t('dangQianYuYan') + ': ' + (currentLang === 'zh-CN' ? '中文' : 'English')"
+              :label="$t('dangQianYuYan') + ': ' + currentLanguageName"
               is-link
               @click="showLanguageSwitch = true"
             ></wd-cell>
@@ -79,21 +79,34 @@ const { setLocale, currentLang } = useI18nSync()
 const showLanguageSwitch = ref(false)
 
 // 语言切换选项
-const languageActions = computed(() => [
+interface LanguageAction {
+  name: string
+  key: string
+  color: string
+}
+const languageActions = computed<LanguageAction[]>(() => [
   {
     name: '中文 🇨🇳',
+    key: 'zh-CN',
     color: currentLang.value === 'zh-CN' ? 'var(--wot-primary-6, #0083ff)' : ''
   },
   {
     name: 'English 🇺🇸',
+    key: 'en-US',
     color: currentLang.value === 'en-US' ? 'var(--wot-primary-6, #0083ff)' : ''
+  },
+  {
+    name: '繁体中文 tw',
+    key: 'zh-TW',
+    color: currentLang.value === 'zh-TW' ? 'var(--wot-primary-6, #0083ff)' : ''
   }
 ])
 
+const currentLanguageName = computed(() => languageActions.value.find((i) => i.key === currentLang.value)?.name)
+
 // 处理语言选择
-const handleLanguageSelect = ({ index }: { index: number }) => {
-  const locale = index === 0 ? 'zh-CN' : 'en-US'
-  switchLanguage(locale)
+const handleLanguageSelect = ({ item }: { item: LanguageAction }) => {
+  switchLanguage(item.key)
 }
 
 const githubData = ref<any>({
