@@ -1,6 +1,22 @@
 # 更新日志 
 
 
+## [2.2.0](https://github.com/wot-ui/wot-ui/compare/v2.1.0...v2.2.0) (2026-06-30)
+
+
+### ✨ Features | 新功能
+
+* ✨ VideoPreview 支持预览时默认 video 铺满屏幕 ([#79](https://github.com/wot-ui/wot-ui/issues/79)) ([8e97be7](https://github.com/wot-ui/wot-ui/commit/8e97be72f25043bd2160e510f56bbddc5c77943f)), closes [#77](https://github.com/wot-ui/wot-ui/issues/77)
+* **button:** ✨ 新增 subtle 类型变体 ([#80](https://github.com/wot-ui/wot-ui/issues/80)) ([5c9e3d1](https://github.com/wot-ui/wot-ui/commit/5c9e3d1d12e29b926640fbc45fcb59586bea566b))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 🐛 修复 Toast 组件图标设置图标大小后行高异常的问题 ([#84](https://github.com/wot-ui/wot-ui/issues/84)) ([13585ff](https://github.com/wot-ui/wot-ui/commit/13585ffdf7f6dc181c39ff16e861a5bcf7273eb7))
+* 🐛 修复未渲染的表单项仍触发表单校验的问题 ([#78](https://github.com/wot-ui/wot-ui/issues/78)) ([01d08f1](https://github.com/wot-ui/wot-ui/commit/01d08f127ec786275af40b0b0515176173d57173)), closes [#73](https://github.com/wot-ui/wot-ui/issues/73)
+* 🐛 修复支付宝小程序 tabs 子组件渲染顺序错误的问题 ([#83](https://github.com/wot-ui/wot-ui/issues/83)) ([58c4c61](https://github.com/wot-ui/wot-ui/commit/58c4c618de497a066b058cc911c3c01e0fa7548b))
+* 修复文档中自动导入示例代码的问题 ([#75](https://github.com/wot-ui/wot-ui/issues/75)) ([be68ccd](https://github.com/wot-ui/wot-ui/commit/be68ccdede09476da833afd9583fbf97dc618291))
+
 ## [2.1.0](https://github.com/wot-ui/wot-ui/compare/v2.0.8...v2.1.0) (2026-06-10)
 
 
